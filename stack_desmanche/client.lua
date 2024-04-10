@@ -66,7 +66,7 @@ RegisterNetEvent('STACK_DESMANCHE:PORTA1', function(source)
             if desmancheStatus == 1 then 
                 DrawText3D(porta1Cds.x, porta1Cds.y, porta1Cds.z, '~g~[E]~w~ Desmanchar porta')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  1 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  1 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), porta1Cds.x, porta1Cds.y, porta1Cds.z, true ) < 1.2 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -94,7 +94,7 @@ RegisterNetEvent('STACK_DESMANCHE:PORTA2', function(source)
             if desmancheStatus == 2 then 
                 DrawText3D(porta2Cds.x, porta2Cds.y, porta2Cds.z, '~g~[E]~w~ Desmanchar porta')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  2 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  2 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), porta2Cds.x, porta2Cds.y, porta2Cds.z, true ) < 1.2 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -123,7 +123,7 @@ RegisterNetEvent('STACK_DESMANCHE:PORTA3', function(source)
             if desmancheStatus == 3 then 
                 DrawText3D(porta3Cds.x, porta3Cds.y, porta3Cds.z, '~g~[E]~w~ Desmanchar porta')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  3 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  3 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), porta3Cds.x, porta3Cds.y, porta3Cds.z, true ) < 1.2then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -158,7 +158,7 @@ RegisterNetEvent('STACK_DESMANCHE:PORTA4', function(source)
             if desmancheStatus ==  4 then 
                 DrawText3D(porta4Cds.x, porta4Cds.y, porta4Cds.z, '~g~[E]~w~ Desmanchar porta')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  4 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  4 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), porta4Cds.x, porta4Cds.y, porta4Cds.z, true ) < 1.2 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -185,7 +185,7 @@ RegisterNetEvent('STACK_DESMANCHE:CAPO', function(source)
             if desmancheStatus ==  5 then 
                 DrawText3D(capoCds.x, capoCds.y, capoCds.z, '~g~[E]~w~ Desmanchar Capo')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  5 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  5 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), capoCds.x, capoCds.y, capoCds.z, true ) < 2.0 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -213,7 +213,7 @@ RegisterNetEvent('STACK_DESMANCHE:PORTAMALAS', function(source)
             if desmancheStatus ==  6 then 
                 DrawText3D(malasCds.x, malasCds.y, malasCds.z, '~g~[E]~w~ Desmanchar Porta Malas')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  6 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  6 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), malasCds.x, malasCds.y, malasCds.z, true ) < 2.0 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
@@ -241,7 +241,7 @@ RegisterNetEvent('STACK_DESMANCHE:CHASSI', function(source)
             if desmancheStatus == 7  then 
                 DrawText3D(chassiCds.x, chassiCds.y, chassiCds.z, '~g~[E]~w~ Desmanchar Chassi')
             end
-            if IsControlJustPressed(0, 38) and desmancheStatus ==  7 then 
+            if IsControlJustPressed(0, 38) and desmancheStatus ==  7 and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), chassiCds.x, chassiCds.y, chassiCds.z, true ) < 2.0 then 
                 TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", -1, true)
                 Wait(5000)
                 ClearPedTasksImmediately(ped)
